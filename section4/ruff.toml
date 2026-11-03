@@ -1,0 +1,8 @@
+line-length = 100
+
+[lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[lint.per-file-ignores]
+# The naive version opens the file without a context manager on purpose.
+"00_files_etl/main.py" = ["SIM115"]
